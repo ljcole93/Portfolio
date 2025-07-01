@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Plan Your Visit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/page4.css">
+</head>
+<body>
+    <header>
+        <h1>Plan Your Visit</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Explore</a></li>
+                <li><a href="page3.html">Plan</a></li>
+                <li><span class="current">Visit</span></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+  <form action="process.php" method="post">
+    <fieldset>
+      <legend>Reservation Details</legend>
+
+      <div id="one">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="visitdate">Visit Date</label>
+        <input type="date" id="visitdate" name="visitdate" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+        <label for="park">Choose a Park</label>
+        <select id="park" name="park" required>
+          <option value="">Select a park</option>
+          <option value="caverns">Florida Caverns</option>
+          <option value="ichetucknee">Ichetucknee Springs</option>
+          <option value="dickinson">Jonathan Dickinson Park</option>
+        </select>
+
+        <label for="animal">Favorite FL Wildlife</label>
+        <input list="animals" id="animal" name="animal">
+        <datalist id="animals">
+          <option value="Manatee"></option>
+          <option value="Panther"></option>
+          <option value="Alligator"></option>
+          <option value="Florida Man"></option>
+        </datalist>
+      </div>
+
+      <div id="two">
+        <fieldset>
+          <legend>Group Size</legend>
+          <p>
+            <input type="radio" id="solo" name="group" value="Solo" required>
+            <label for="solo">Solo</label>
+          </p>
+          <p>
+            <input type="radio" id="small" name="group" value="Small" required>
+            <label for="small">Small (2-5)</label>
+          </p>
+          <p>
+            <input type="radio" id="large" name="group" value="Large" required>
+            <label for="large">Large (6+)</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Activities</legend>
+          <p>
+            <input type="checkbox" id="hiking" name="activities[]" value="Hiking" required>
+            <label for="hiking">Hiking</label>
+          </p>
+          <p>
+            <input type="checkbox" id="camping" name="activities[]" value="Camping">
+            <label for="camping">Camping</label>
+          </p>
+          <p>
+            <input type="checkbox" id="swimming" name="activities[]" value="Swimming">
+            <label for="swimming">Swimming</label>
+          </p>
+          <p>
+            <input type="checkbox" id="burnstuff" name="activities[]" value="Burning Stuff">
+            <label for="burnstuff">Burning Stuff</label>
+          </p>
+        </fieldset>
+      </div>
+
+      <div id="three">
+        <button type="submit">Submit to me</button>
+      </div>
+    </fieldset>
+  </form>
+</main>
+
+<footer>
+  <p>&copy; 2025 Logan Cole</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+.scroll-bar {
+    max-height: 18em;
+    overflow-y: auto;
+    margin: 1em 0;
+    padding: 0.5em;
+    border: 1px solid gray;
+    background-color: lightseagreen;
+    border-radius: 0.5em;
+}
+
+.left {
+    float: left;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    clear: both;
+    color: navajowhite;
+}
+
+@media screen and (min-width: 40.01em) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 80em;
+        margin: 2em auto;
+    }
+    .scroll-bar {
+        flex: 0 0 48%;
+        box-sizing: border-box;
+        max-height: 25em;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    main {
+        display: block;
+    }
+    .scroll-bar {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 80.01em) {
+    main {
+        max-width: 100em;
+    }
+    .scroll-bar {
+        flex: 0 0 32%;
+        max-height: 30em;
+    }
+}

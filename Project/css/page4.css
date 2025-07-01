@@ -1,0 +1,72 @@
+form {
+    max-width: 60em;
+    margin: 2em auto;
+    padding: 1.5em;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 0.5em;
+}
+
+fieldset {
+    border: 1px solid grey;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5em;
+}
+
+#one, #two, #three {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+input[type="text"], 
+input[type="date"],
+input[type="password"],
+input[list],
+select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0.75em;
+    border: 1px solid grey;
+    border-radius: 0.5em;
+    font-size: 1em;
+}
+
+fieldset p {
+    margin: 0.5em;
+}
+
+#three {
+    text-align: center;
+}
+
+#three button {
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    color: white;
+    background: midnightblue;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 40.01em) {
+    #one,
+    #two {
+        float: left;
+        width: 48%;
+        margin-right: 4%;
+        box-sizing: border-box;
+    }
+    #two {
+        margin-right: 0;
+    }
+    #three {
+        clear: both;
+    }
+}

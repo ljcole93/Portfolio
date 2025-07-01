@@ -1,0 +1,52 @@
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.4;
+    background: white;
+    color: black;
+}
+
+header {
+    background: linear-gradient(navy, orange);
+    padding: 1em 0;
+    text-align: center;
+    color: navajowhite;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0.5em 0 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+nav .current {
+    font-weight: bold;
+    cursor: default;
+    text-decoration: none;
+}
+
+main {
+    max-width: 60em;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+footer {
+    text-align: center;
+    margin: 2em 0;
+    font-size: .9em;
+}
+
